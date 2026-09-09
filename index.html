@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clarence — AI Automation Specialist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-nav" id="siteNav">
+      <div class="wrap nav-inner">
+        <a href="#top" class="logotype"><span class="dot"></span>CLARENCE</a>
+        <nav class="links">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact" class="nav-cta">Book a call</a>
+        </nav>
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div
+      class="mobile-menu"
+      id="mobileMenu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile navigation"
+    >
+      <button
+        class="mobile-menu-close"
+        id="mobileMenuClose"
+        aria-label="Close menu"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+        >
+          <line x1="5" y1="5" x2="19" y2="19" />
+          <line x1="19" y1="5" x2="5" y2="19" />
+        </svg>
+      </button>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav-cta">Book a call</a>
+    </div>
+
+    <main id="top">
+      <!-- ================= HERO ================= -->
+      <section class="hero">
+        <div class="hero-grain"></div>
+        <div class="wrap">
+          <div class="hero-eyebrow">
+            <span class="rule"></span>AI AUTOMATION SPECIALIST
+          </div>
+
+          <div class="hero-grid">
+            <div>
+              <h1 class="hero-headline">
+                I build the machinery <em>behind</em> businesses that never
+                sleep.
+              </h1>
+              <p class="hero-sub">
+                Clarence designs and ships AI-driven automations that take
+                repetitive, error-prone work off your team's plate — reliably,
+                quietly, and at scale. Less busywork. More trust in the system.
+              </p>
+              <div class="hero-ctas">
+                <a href="#work" class="btn btn-primary">See the work →</a>
+                <a href="#contact" class="btn btn-ghost">Start a project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROJECTS ================= -->
+      <section class="projects section-pad" id="work">
+        <div class="wrap">
+          <div class="projects-head reveal">
+            <div class="projects-wordmark">Projects</div>
+            <p class="projects-note">
+              A few of the systems I've designed and shipped — each one
+              replacing a manual process with something that runs on its own.
+            </p>
+          </div>
+
+          <div class="wrap projects-flag" style="padding: 0">
+            <span class="placeholder-flag"
+              >✎ Placeholder content — swap in your real case studies here</span
+            >
+          </div>
+
+          <div class="project-card reveal">
+            <!-- Workflow screenshot: replace src with e.g. src="project-1-workflow.png" -->
+            <div class="project-shot">
+              <img
+                src="project-1-workflow.png"
+                alt="Support Inbox Autopilot workflow"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="shot-placeholder" style="display: none">
+                <svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                >
+                  <rect x="3" y="4" width="7" height="7" rx="1.5" />
+                  <rect x="14" y="4" width="7" height="7" rx="1.5" />
+                  <rect x="8.5" y="15" width="7" height="5" rx="1.5" />
+                  <path d="M6.5 11v2a2 2 0 0 0 2 2h1" />
+                  <path d="M17.5 11v2a2 2 0 0 0-2 2h-1" />
+                </svg>
+                <div class="shot-text">
+                  Drop in a screenshot of this workflow<br />(replace
+                  project-1-workflow.png)
+                </div>
+              </div>
+            </div>
+            <div class="project-card-top">
+              <div class="project-card-heading">
+                <div class="project-num">01</div>
+                <div class="project-info">
+                  <div class="project-name">Support Inbox Autopilot</div>
+                  <div class="project-tags">
+                    <span>Zendesk</span><span>GPT-4</span><span>Slack</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-metric">
+                <div class="m-num">3.2 hrs</div>
+                <div class="m-label">FASTER FIRST RESPONSE</div>
+              </div>
+            </div>
+            <p class="project-desc">
+              An AI triage layer that reads every incoming ticket, classifies
+              intent and urgency, and routes it to the right queue before a
+              human ever sees it.
+            </p>
+          </div>
+
+          <div class="project-card reveal">
+            <!-- Workflow screenshot: replace src with e.g. src="project-2-workflow.png" -->
+            <div class="project-shot">
+              <img
+                src="project-2-workflow.png"
+                alt="Lead Qualification Pipeline workflow"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="shot-placeholder" style="display: none">
+                <svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                >
+                  <rect x="3" y="4" width="7" height="7" rx="1.5" />
+                  <rect x="14" y="4" width="7" height="7" rx="1.5" />
+                  <rect x="8.5" y="15" width="7" height="5" rx="1.5" />
+                  <path d="M6.5 11v2a2 2 0 0 0 2 2h1" />
+                  <path d="M17.5 11v2a2 2 0 0 0-2 2h-1" />
+                </svg>
+                <div class="shot-text">
+                  Drop in a screenshot of this workflow<br />(replace
+                  project-2-workflow.png)
+                </div>
+              </div>
+            </div>
+            <div class="project-card-top">
+              <div class="project-card-heading">
+                <div class="project-num">02</div>
+                <div class="project-info">
+                  <div class="project-name">Lead Qualification Pipeline</div>
+                  <div class="project-tags">
+                    <span>Webflow Forms</span><span>OpenAI</span
+                    ><span>HubSpot</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-metric">
+                <div class="m-num">0</div>
+                <div class="m-label">LEADS MISSED PER MONTH</div>
+              </div>
+            </div>
+            <p class="project-desc">
+              Every inbound lead is scored against fit criteria the moment they
+              submit a form, then pushed straight into the CRM with context
+              attached for sales.
+            </p>
+          </div>
+
+          <div class="project-card reveal">
+            <!-- Workflow screenshot: replace src with e.g. src="project-3-workflow.png" -->
+            <div class="project-shot">
+              <img
+                src="project-3-workflow.png"
+                alt="Weekly Ops Reporting Agent workflow"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="shot-placeholder" style="display: none">
+                <svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                >
+                  <rect x="3" y="4" width="7" height="7" rx="1.5" />
+                  <rect x="14" y="4" width="7" height="7" rx="1.5" />
+                  <rect x="8.5" y="15" width="7" height="5" rx="1.5" />
+                  <path d="M6.5 11v2a2 2 0 0 0 2 2h1" />
+                  <path d="M17.5 11v2a2 2 0 0 0-2 2h-1" />
+                </svg>
+                <div class="shot-text">
+                  Drop in a screenshot of this workflow<br />(replace
+                  project-3-workflow.png)
+                </div>
+              </div>
+            </div>
+            <div class="project-card-top">
+              <div class="project-card-heading">
+                <div class="project-num">03</div>
+                <div class="project-info">
+                  <div class="project-name">Weekly Ops Reporting Agent</div>
+                  <div class="project-tags">
+                    <span>Airtable</span><span>Postgres</span
+                    ><span>Claude</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-metric">
+                <div class="m-num">6 hrs</div>
+                <div class="m-label">SAVED PER WEEK, PER MANAGER</div>
+              </div>
+            </div>
+            <p class="project-desc">
+              Pulls numbers from four disconnected tools every Monday, writes
+              the summary in plain English, and delivers it before the team's
+              first standup.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section class="about section-pad" id="about">
+        <div class="wrap">
+          <div class="eyebrow reveal"><span class="rule"></span>ABOUT</div>
+          <div class="about-grid">
+            <div class="reveal">
+              <!-- Photo: clarence.jpg must sit in the same folder as this HTML file -->
+              <div class="about-photo">
+                <img
+                  src="images/portfolio photo.jpg"
+                  alt="Clarence — AI Automation Specialist"
+                />
+              </div>
+              <p class="about-lead">
+                I help teams replace <em>manual, repetitive</em> work with
+                automations they can actually trust — built quietly, tested
+                thoroughly, and handed over in plain language.
+              </p>
+            </div>
+
+            <div class="about-cols">
+              <div class="about-col reveal">
+                <h3>What I do</h3>
+                <ul>
+                  <li>
+                    <b>Design</b> automation systems that connect the tools you
+                    already use — forms, CRMs, inboxes, spreadsheets, chat.
+                  </li>
+                  <li>
+                    <b>Build</b> AI agents that read, classify, and act on
+                    incoming information without constant supervision.
+                  </li>
+                  <li>
+                    <b>Ship</b> with monitoring and fallbacks in place, so a
+                    broken step never becomes a broken business.
+                  </li>
+                  <li>
+                    <b>Hand off</b> documentation clear enough that your team
+                    can maintain it without me.
+                  </li>
+                </ul>
+              </div>
+              <div class="about-col reveal">
+                <h3>Who I help</h3>
+                <ul>
+                  <li>
+                    <b>Founders</b> whose ops still run on manual copy-paste
+                    between five tools.
+                  </li>
+                  <li>
+                    <b>Operations leads</b> drowning in repetitive requests that
+                    follow a clear, learnable pattern.
+                  </li>
+                  <li>
+                    <b>Agencies</b> that need the same reliable process to run
+                    for every client, every time.
+                  </li>
+                  <li>
+                    <b>Support &amp; sales teams</b> who want response speed
+                    without adding headcount.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FAQ ================= -->
+      <section class="faq section-pad" id="faq">
+        <div class="wrap">
+          <div class="faq-head reveal">
+            <div class="eyebrow"><span class="rule"></span>FAQ</div>
+            <h2>Good to know before we talk.</h2>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                What businesses do you work with?
+                <span class="faq-toggle"></span>
+              </button>
+              <div class="faq-a-wrap">
+                <div class="faq-a-inner">
+                  <p class="faq-a">
+                    Mostly small teams and founders — service businesses,
+                    agencies, and early-stage companies with clear, repeatable
+                    processes that are currently done by hand. If your team
+                    follows the same steps more than a few times a week, it's
+                    usually worth a conversation.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                How long does automation take?
+                <span class="faq-toggle"></span>
+              </button>
+              <div class="faq-a-wrap">
+                <div class="faq-a-inner">
+                  <p class="faq-a">
+                    Most single-workflow projects take one to three weeks, from
+                    mapping the current process to a tested system running in
+                    production. Larger, multi-step pipelines take longer — I'll
+                    give you a realistic timeline after a short scoping call,
+                    not before.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                Can you improve an existing workflow?
+                <span class="faq-toggle"></span>
+              </button>
+              <div class="faq-a-wrap">
+                <div class="faq-a-inner">
+                  <p class="faq-a">
+                    Yes — a lot of my work starts with a process that already
+                    exists but is slow, manual, or error-prone. I'll audit
+                    what's there first, then rebuild only the parts that need it
+                    rather than starting from zero.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                Do you use Make?
+                <span class="faq-toggle"></span>
+              </button>
+              <div class="faq-a-wrap">
+                <div class="faq-a-inner">
+                  <p class="faq-a">
+                    Yes, Make is one of my regular tools, alongside Zapier and
+                    custom code when a workflow needs more control than a
+                    no-code platform can offer. I pick the tool based on what
+                    your process actually needs, not the other way around.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                Do I need AI for this?
+                <span class="faq-toggle"></span>
+              </button>
+              <div class="faq-a-wrap">
+                <div class="faq-a-inner">
+                  <p class="faq-a">
+                    Not always. Some workflows just need reliable automation
+                    with clear rules — no AI required. I'll only bring AI in
+                    where a step genuinely needs judgment, like reading free
+                    text or making a decision that isn't a simple if/then.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CLOSE / CONTACT ================= -->
+      <section class="close" id="contact">
+        <div class="wrap">
+          <div class="eyebrow on-dark reveal" style="justify-content: center">
+            <span class="rule"></span>CONTACT
+          </div>
+          <h2 class="reveal">Let's automate your business.</h2>
+
+          <form
+            class="contact-form reveal"
+            id="contactForm"
+            action="https://formspree.io/f/xeajblpz"
+            method="POST"
+          >
+            <div class="form-row">
+              <div class="form-field">
+                <label for="f-name">Name</label>
+                <input
+                  type="text"
+                  id="f-name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="f-email">Email</label>
+                <input
+                  type="email"
+                  id="f-email"
+                  name="email"
+                  placeholder="you@company.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="f-business">Business</label>
+              <input
+                type="text"
+                id="f-business"
+                name="business"
+                placeholder="Company or project name"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="f-challenge">Biggest challenge</label>
+              <textarea
+                id="f-challenge"
+                name="challenge"
+                placeholder="What's the most repetitive, manual part of your process right now?"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              Send it over →
+            </button>
+            <p class="form-note">
+              Prefer email? Reach me directly at
+              <a href="mailto:clarenceguevarra425@gmail.com"
+                >clarenceguevarra425@gmail.com</a
+              >
+            </p>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            Thanks — that's landed in my inbox. I'll get back to you within a
+            day or two to talk through what you're working on.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap footer-inner">
+        <span>© 2026 Clarence</span>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+          <a href="mailto:clarenceguevarra425@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/clarence-guevarra-7a6584175/"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
