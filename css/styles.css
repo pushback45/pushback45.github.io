@@ -556,6 +556,13 @@ section {
   text-align: right;
   flex-shrink: 0;
 }
+.m-tag {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--signal);
+  margin-bottom: 4px;
+}
 .project-metric .m-num {
   font-family: var(--display);
   font-size: 30px;
@@ -574,25 +581,25 @@ section {
 .project-shot {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3.08 / 1;
   border-radius: 14px;
   overflow: hidden;
   background: var(--navy);
   border: 1px solid var(--line);
   margin-bottom: 24px;
-  padding: 22px;
+  padding: 18px;
   box-sizing: border-box;
 }
 .project-shot img {
   object-fit: contain;
   object-position: center;
   position: absolute;
-  top: 22px;
-  left: 22px;
-  right: 22px;
-  bottom: 22px;
-  width: calc(100% - 44px);
-  height: calc(100% - 44px);
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  width: calc(100% - 36px);
+  height: calc(100% - 36px);
   display: block;
 }
 .project-shot .shot-placeholder {
