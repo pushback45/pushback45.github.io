@@ -3,90 +3,472 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Under Maintenance | Clarence</title>
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #080b10;
-        color: #ffffff;
-        font-family: Arial, sans-serif;
-        padding: 24px;
-      }
-
-      .maintenance {
-        max-width: 650px;
-        text-align: center;
-      }
-
-      .label {
-        font-size: 12px;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        color: #8ca8ff;
-        margin-bottom: 24px;
-      }
-
-      h1 {
-        font-size: clamp(42px, 8vw, 72px);
-        line-height: 1;
-        margin-bottom: 24px;
-      }
-
-      p {
-        color: #a9b0bc;
-        font-size: 18px;
-        line-height: 1.7;
-        max-width: 520px;
-        margin: 0 auto;
-      }
-
-      .status {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        margin-top: 32px;
-        padding: 10px 16px;
-        border: 1px solid #252a34;
-        border-radius: 999px;
-        color: #c8ced8;
-        font-size: 14px;
-      }
-
-      .dot {
-        width: 8px;
-        height: 8px;
-        background: #8ca8ff;
-        border-radius: 50%;
-      }
-    </style>
+    <title>Clarence — AI Automation Specialist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-
   <body>
-    <main class="maintenance">
-      <div class="label">Clarence — AI Automation Specialist</div>
-
-      <h1>Something better is being built.</h1>
-
-      <p>
-        My portfolio is currently undergoing some improvements. I'll be back
-        online soon with a better experience.
-      </p>
-
-      <div class="status">
-        <span class="dot"></span>
-        Currently under maintenance
+    <header class="site-nav" id="siteNav">
+      <div class="wrap nav-inner">
+        <a href="#top" class="logotype"><span class="dot"></span>CLARENCE</a>
+        <nav class="links">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact" class="nav-cta">Book a call</a>
+        </nav>
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span></span><span></span><span></span>
+        </button>
       </div>
+    </header>
+
+    <div
+      class="mobile-menu"
+      id="mobileMenu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile navigation"
+    >
+      <button
+        class="mobile-menu-close"
+        id="mobileMenuClose"
+        aria-label="Close menu"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+        >
+          <line x1="5" y1="5" x2="19" y2="19" />
+          <line x1="19" y1="5" x2="5" y2="19" />
+        </svg>
+      </button>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav-cta">Book a call</a>
+    </div>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-grain"></div>
+        <div class="wrap">
+          <div class="hero-eyebrow">
+            <span class="rule"></span>AI AUTOMATION SPECIALIST
+          </div>
+
+          <div class="hero-grid">
+            <div>
+              <h1 class="hero-headline">
+                I build automation systems that <em>keep businesses</em> moving.
+              </h1>
+              <p class="hero-sub">
+                I design and build AI-powered workflows that automate repetitive
+                tasks, connect business tools, and streamline everyday
+                processes, so you can spend less time on manual work and more
+                time growing your business.
+              </p>
+              <div class="hero-ctas">
+                <a href="#work" class="btn btn-primary">See the work →</a>
+                <a href="#contact" class="btn btn-ghost">Start a project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="projects section-pad" id="work">
+        <div class="wrap">
+          <div class="projects-head reveal">
+            <div class="projects-wordmark">Projects</div>
+            <p class="projects-note">
+              Projects I've built to solve everyday business problems and cut
+              down on manual work.
+            </p>
+          </div>
+
+          <div class="wrap projects-flag" style="padding: 0"></div>
+
+          <div class="project-card reveal">
+            <div class="project-shot">
+              <img
+                src="images/AI Lead Qualification System workflow.png"
+                alt="Support Inbox Autopilot workflow"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="shot-placeholder" style="display: none">
+                <svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                >
+                  <rect x="3" y="4" width="7" height="7" rx="1.5" />
+                  <rect x="14" y="4" width="7" height="7" rx="1.5" />
+                  <rect x="8.5" y="15" width="7" height="5" rx="1.5" />
+                  <path d="M6.5 11v2a2 2 0 0 0 2 2h1" />
+                  <path d="M17.5 11v2a2 2 0 0 0-2 2h-1" />
+                </svg>
+                <div class="shot-text">
+                  Drop in a screenshot of this workflow<br />(replace
+                  project-1-workflow.png)
+                </div>
+              </div>
+            </div>
+            <div class="project-card-top">
+              <div class="project-card-heading">
+                <div class="project-num">01</div>
+                <div class="project-info">
+                  <div class="project-name">AI Lead Qualification System</div>
+                  <div class="project-tags">
+                    <span>Make.com</span><span>OpenAi</span
+                    ><span>Google Sheets</span><span>Webhooks</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-metric"></div>
+            </div>
+            <p class="project-desc">
+              An AI-powered workflow that captures incoming leads, analyzes
+              their business needs, assigns a qualification status and priority,
+              generates a concise summary, and automatically updates the lead
+              database.
+            </p>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-shot">
+              <img
+                src="images/Client Onboarding Automation.png"
+                alt="Client Onboarding Automation"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="shot-placeholder" style="display: none">
+                <svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                >
+                  <rect x="3" y="4" width="7" height="7" rx="1.5" />
+                  <rect x="14" y="4" width="7" height="7" rx="1.5" />
+                  <rect x="8.5" y="15" width="7" height="5" rx="1.5" />
+                  <path d="M6.5 11v2a2 2 0 0 0 2 2h1" />
+                  <path d="M17.5 11v2a2 2 0 0 0-2 2h-1" />
+                </svg>
+                <div class="shot-text">
+                  Drop in a screenshot of this workflow<br />(replace
+                  project-2-workflow.png)
+                </div>
+              </div>
+            </div>
+            <div class="project-card-top">
+              <div class="project-card-heading">
+                <div class="project-num">02</div>
+                <div class="project-info">
+                  <div class="project-name">Client Onboarding Automation</div>
+                  <div class="project-tags">
+                    <span>Make.com</span><span>Google Sheets</span
+                    ><span>Google Drive</span><span>Gmail</span>
+                    <span>Google Docs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="project-desc">
+              Turns a manual client onboarding process into an automated
+              workflow that handles welcome emails, dedicated client workspaces,
+              personalized questionnaires, and onboarding tracking in one
+              centralized system.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about section-pad" id="about">
+        <div class="wrap">
+          <div class="eyebrow reveal"><span class="rule"></span>ABOUT</div>
+          <div class="about-grid">
+            <div class="reveal">
+              <div class="about-photo">
+                <img
+                  src="images/portfolio photo.jpg"
+                  alt="Clarence — AI Automation Specialist"
+                />
+              </div>
+              <p class="about-lead">
+                I help service businesses replace manual, repetitive work with
+                practical <em>automation</em> systems that are reliable, easy to
+                understand, and built around how their business actually
+                operates.
+              </p>
+            </div>
+
+            <div class="about-cols">
+              <div class="about-col reveal">
+                <h3>What I do</h3>
+                <ul>
+                  <li>
+                    <b>Design</b> automation workflows that connect the tools
+                    your business already uses and reduce repetitive manual
+                    work.
+                  </li>
+                  <li>
+                    <b>Build</b> AI-powered systems for tasks like lead
+                    management, client onboarding, follow-ups, and internal
+                    processes.
+                  </li>
+                  <li>
+                    <b>Integrate</b> business tools and APIs so information
+                    moves between systems without constant manual input
+                  </li>
+                  <li>
+                    <b>Test & document</b> each workflow so it's reliable,
+                    understandable, and easier to maintain.
+                  </li>
+                </ul>
+              </div>
+              <div class="about-col reveal">
+                <h3>Who I help</h3>
+                <ul>
+                  <li>
+                    <b>Service businesses</b> looking to reduce repetitive
+                    administrative work and create more efficient day-to-day
+                    processes.
+                  </li>
+                  <li>
+                    <b>Agencies</b> managing leads, client onboarding,
+                    follow-ups, and recurring processes across multiple clients.
+                  </li>
+                  <li>
+                    <b>Consultants & coaches</b> who want to automate lead
+                    management, scheduling, client communication, and
+                    onboarding.
+                  </li>
+                  <li>
+                    <b>Professional service providers</b> who rely on forms,
+                    email, spreadsheets, and other tools to manage their daily
+                    operations.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq section-pad" id="faq">
+        <div class="wrap">
+          <div class="faq-head reveal">
+            <div class="eyebrow"><span class="rule"></span>FAQ</div>
+            <h2>Questions before we get started?</h2>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                What types of businesses do you work with?
+                <span class="faq-toggle"></span>
+              </button>
+              <div class="faq-a-wrap">
+                <div class="faq-a-inner">
+                  <p class="faq-a">
+                    I primarily work with service businesses looking to reduce
+                    repetitive manual work, improve their workflows, and connect
+                    the tools they already use.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                What processes can you automate?
+                <span class="faq-toggle"></span>
+              </button>
+              <div class="faq-a-wrap">
+                <div class="faq-a-inner">
+                  <p class="faq-a">
+                    I can build workflows around processes such as lead
+                    management, follow-ups, client onboarding, data entry,
+                    notifications, email workflows, and other repetitive
+                    business tasks.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                Can you work with the tools I already use?
+                <span class="faq-toggle"></span>
+              </button>
+              <div class="faq-a-wrap">
+                <div class="faq-a-inner">
+                  <p class="faq-a">
+                    Yes. I focus on connecting existing business tools where
+                    possible using Make.com, APIs, webhooks, and other
+                    integrations.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                Does every automation need AI?
+                <span class="faq-toggle"></span>
+              </button>
+              <div class="faq-a-wrap">
+                <div class="faq-a-inner">
+                  <p class="faq-a">
+                    No. AI is only useful when the process actually benefits
+                    from it. Some workflows are better handled with
+                    straightforward automation, while others can use AI for
+                    tasks such as classification, summarization, or processing
+                    unstructured information.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                How do we get started?
+                <span class="faq-toggle"></span>
+              </button>
+              <div class="faq-a-wrap">
+                <div class="faq-a-inner">
+                  <p class="faq-a">
+                    We start by looking at your current process, identifying
+                    repetitive or inefficient steps, and determining what can
+                    realistically be automated. From there, I can design a
+                    workflow around your requirements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLOSE and CONTACT  -->
+      <section class="close" id="contact">
+        <div class="wrap">
+          <div class="eyebrow on-dark reveal" style="justify-content: center">
+            <span class="rule"></span>CONTACT
+          </div>
+          <h2 class="reveal">Let's automate your business.</h2>
+
+          <form
+            class="contact-form reveal"
+            id="contactForm"
+            action="https://hook.eu1.make.com/591kim95gxcqp91lrmfgopa66cyftggj"
+            method="POST"
+          >
+            <div class="form-row">
+              <div class="form-field">
+                <label for="f-name">Name</label>
+                <input
+                  type="text"
+                  id="f-name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="f-email">Email</label>
+                <input
+                  type="email"
+                  id="f-email"
+                  name="email"
+                  placeholder="you@company.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="f-business">Business</label>
+              <input
+                type="text"
+                id="f-business"
+                name="business"
+                placeholder="Company or project name"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="f-challenge">Biggest challenge</label>
+              <textarea
+                id="f-challenge"
+                name="challenge"
+                placeholder="What's the most repetitive, manual part of your process right now?"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              Send it over →
+            </button>
+            <p class="form-note">
+              Prefer email? Reach me directly at
+              <a href="mailto:clarenceguevarra425@gmail.com"
+                >clarenceguevarra425@gmail.com</a
+              >
+            </p>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            Thanks — that's landed in my inbox. I'll get back to you within a
+            day or two to talk through what you're working on.
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="wrap footer-inner">
+        <span>© 2026 Clarence</span>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+          <a href="mailto:clarenceguevarra425@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/clarence-guevarra-7a6584175/"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
